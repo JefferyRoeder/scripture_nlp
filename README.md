@@ -26,6 +26,10 @@ The purpose of this project is to analze sentiment of different religious texts 
 
 This project uses the Sentiment intensity analzyer with vader sentiment to analyze each chapter of various religious texts. Each verse is given a negative, neutral, positive and overall score. The verses were categorized based on their vader score as very positive, positive, neutral, negative, or very negative. Each book was then grouped based on the percent of each sentiment group.
 
+##### Visualization of final product
+
+https://public.tableau.com/profile/jefferyroeder#!/vizhome/bible_divergentbar/Story1
+
 ##### Scripture Versions:
 - Bible: American Standard version of the Bible
 - Quran: The Holy Quran (King Fahd Holy Quran Printing Complex)

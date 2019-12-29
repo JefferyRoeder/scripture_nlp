@@ -419,7 +419,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run>Bible Sentiment Analysis</run>
+            <run>Scripture Sentiment Analysis</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -431,9 +431,9 @@
             <zone h='3423' id='3' type='title' w='98426' x='787' y='830' />
             <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='4253' />
             <zone h='84440' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='14730'>
-              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+              <flipboard active-id='2' nav-type='caption' show-nav-arrows='true'>
                 <story-points>
-                  <story-point caption='Old Testament' captured-sheet='Old Testament' id='1'>
+                  <story-point caption='Bible: Old Testament' captured-sheet='Old Testament' id='1'>
                     <capturedDeltas>
                       <worksheet name='Old Testament'>
                         <style delta-type='added'>
@@ -454,7 +454,28 @@
                       </worksheet>
                     </capturedDeltas>
                   </story-point>
-                  <story-point captured-sheet='New Testament' id='2' />
+                  <story-point caption='Bible: New Testament' captured-sheet='New Testament' id='2'>
+                    <capturedDeltas>
+                      <worksheet name='New Testament'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <format attr='title' class='0' field='[federated.18613ar0lcva19182at001mhvsmt].[med:percent:qk]' scope='cols' value='Percent of book by sentiment category' />
+                          </style-rule>
+                        </style>
+                        <selection-collection>
+                          <node-selection select-tuples='false'>
+                            <oriented-node-reference orientation='horizontal'>
+                              <node-reference>
+                                <axis>[federated.18613ar0lcva19182at001mhvsmt].[med:percent:qk]</axis>
+                              </node-reference>
+                              <page-reference />
+                            </oriented-node-reference>
+                          </node-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Quran' captured-sheet='' id='3' />
                 </story-points>
               </flipboard>
             </zone>
@@ -585,7 +606,7 @@
     </window>
     <window class='dashboard' maximized='true' name='Story 1'>
       <viewpoints />
-      <active id='4' />
+      <active id='-1' />
       <simple-id uuid='{BD3F87C9-BD33-4E72-9DA3-6C6CFB71E71E}' />
     </window>
   </windows>
