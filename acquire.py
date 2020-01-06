@@ -14,3 +14,11 @@ def bible_wrangle():
     df.genre = np.where(df.genre == 'Acts','History',df.genre)
     df.genre = np.where(df.genre == 'Apocalyptic','Prophets',df.genre)
     return df
+
+
+def bookofmormon_wrangle():
+    df = pd.read_csv('lds-scriptures.csv')
+    df = df[df.volume_title == 'Book of Mormon']
+    df = df.drop(['volume_title','volume_long_title','book_long_title','volume_subtitle','book_short_title','volume_lds_url','book_lds_url','chapter_id','verse_id','verse_title','verse_short_title','volume_short_title'],axis=1)
+    df.columns = ['id','book_no','book','test','ch','ver','text']
+    return df
